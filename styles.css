@@ -3,10 +3,7 @@
       flex-direction: column;
       gap: 10px;
     }
-    .radio-group input[type="radio"] {
-      accent-color: initial; 
-    }
-    .radio-group input:nth-child(even) {
+    .radio-group label:nth-child(even) input[type="radio"]{
       accent-color: red; 
     }
     .radio-group input[type="radio"]:disabled {
