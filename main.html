@@ -1,40 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radio Buttons</title>
-    <style>
-        .input {
-            color: red;
-        }
-    </style>
+  <link rel="stylesheet" href="radiostyle.css">
 </head>
 <body>
-    <form>
-        <label>
-            <input type="radio" name="options" value="1" id="option1"> Option 1
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="options" value="2" class="input" id="option2" disabled> Option 2
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="options" value="3" id="option3" checked> Option 3
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="options" value="4" class="input" id="option4"> Option 4
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="options" value="5" id="option5"> Option 5
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="options" value="6" class="input" id="option6"> Option 6
-        </label>
-    </form>
+  <div class="radio-group">
+    <label><input type="radio" name="options" value="1"> Option 1</label>
+    <label><input type="radio" name="options" value="2" disabled> Option 2</label>
+    <label><input type="radio" name="options" value="3" id="default-option"> Option 3</label>
+    <label><input type="radio" name="options" value="4"> Option 4</label>
+    <label><input type="radio" name="options" value="5"> Option 5</label>
+    <label><input type="radio" name="options" value="6"> Option 6</label>
+  </div>
+
+  <script>
+    document.getElementById('default-option').checked = true;
+  </script>
 </body>
 </html>

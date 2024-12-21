@@ -1,1 +1,14 @@
-/*  your css code here. If applicable */
+.radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .radio-group input[type="radio"] {
+      accent-color: initial; 
+    }
+    .radio-group input:nth-child(even) {
+      accent-color: red; 
+    }
+    .radio-group input[type="radio"]:disabled {
+      cursor: not-allowed;
+    }
