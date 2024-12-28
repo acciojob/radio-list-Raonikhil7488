@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="radiostyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Buttons Demo</title>
+<link rel="stylesheet" href="radio.css">
 </head>
 <body>
-  <div class="radio-group">
-    <label><input type="radio" name="options" value="1"> Option 1</label>
-    <label><input type="radio" name="options" value="2" disabled> Option 2</label>
-    <label><input type="radio" name="options" value="3" id="default-option"> Option 3</label>
-    <label><input type="radio" name="options" value="4"> Option 4</label>
-    <label><input type="radio" name="options" value="5"> Option 5</label>
-    <label><input type="radio" name="options" value="6"> Option 6</label>
-  </div>
 
-  <script>
-    document.getElementById('default-option').checked = true;
-  </script>
+  <form>
+    <input type="radio" id="option1" name="options">
+    <label for="option1">Option 1</label>
+    
+    <input type="radio" id="option2" name="options" class="input-red" disabled>
+    <label for="option2">Option 2</label>
+    
+    <input type="radio" id="option3" name="options" checked>
+    <label for="option3">Option 3</label>
+    
+    <input type="radio" id="option4" name="options" class="input-red">
+    <label for="option4">Option 4</label>
+    
+    <input type="radio" id="option5" name="options">
+    <label for="option5">Option 5</label>
+    
+    <input type="radio" id="option6" name="options" class="input-red">
+    <label for="option6">Option 6</label>
+  </form>
 </body>
 </html>
+
+
